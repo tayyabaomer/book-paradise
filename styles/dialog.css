@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+dialog {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 25px;
+    padding: 0 3vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.formCloseBtnMain {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.formCloseBtnMain .formCloseBtn {
+    border: none;
+    background: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.formHeading h1 {
+    color: #555;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1.2vw;
+}
+
+.fields input {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 0.8rem 1rem;
+    font-size: 14px;
+    border-radius: 0.5rem;
+    border: 1px solid #b5b5b5;
+}
+
+.register-link {
+    margin: 1vw 0;
+}
+
+.register-link p{
+    font-size: 0.9vw;
+}
+
+.register-link .register-destination {
+    text-decoration: underline;
+    /* color: #0000FF; */
+    color: #800080;
+    cursor: pointer;
+}
+
+.register-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+}
+
+.sumit-btn {
+    border: none;
+    background-color: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    transition: background-color 0.5s ease;
+}
+
+.sumit-btn:hover{
+    background-color: #563434;
+}

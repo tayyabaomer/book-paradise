@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us || Discover, Read, Repeat!</title>
+
+    <!-- Custome Css Link -->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <link rel="stylesheet" href="./styles/style2.css">
+
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    
+</head>
+<body>
+    
+    <!------HEADER SECTION-------->
+    <header class="header">
+        <div class="container">
+
+            <!-----Start Navbar------>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" class="logo-red">BookParadise</a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="product.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="active">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="nav-btn">
+                    <button class="login-btn">LOGIN</button>
+                </div>
+            </div>
+            <!------End Navbar------>
+
+        </div>
+    </header>
+    <!------End HEADER------->
+
+
+    
+<!---------------Start Contact Us Form-------------------->
+    <div class="wrapper">
+        <h2 class="title">Contact Us</h2>
+
+        <div class="contact">
+            <div id="error-message">
+            </div>
+
+            <form action="" id="myForm" onsubmit="return validate();">
+                <div class="input-field">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="phone" placeholder="Phone">
+                </div>
+                <div class="input-field">
+                    <input type="email" id="email" placeholder="Email">
+                </div>
+                <div class="input-field">
+                    <input type="text" id="subject" placeholder="Subject">
+                </div>
+                <div class="input-field">
+                    <textarea placeholder="Message" id="message"> </textarea>                   
+                </div>
+                <div class="submitbtn">
+                    <input type="submit">
+                </div>
+            </form>
+
+        </div>
+    </div>
+<!---------------End Contact Us Form-------------------->
+
+
+
+    <!-----Start Footer----->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <a href="index.html" class="logo-white">BookParadise</a>
+                </div>
+                <div class="footer-col-2">
+                    <a href="index.html" class="logo-white">BookParadise</a>
+                    <p>Your one stop shop for all your book needs</p>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#">Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#">Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright &copy; 2024 | BookParadise</p>
+        </div>
+    </footer>
+    <!------End Footer----->
+
+    
+    <script src="./main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+@import url(./style.css);
+@import url(./modal.css);
+
+/* Search in Product page css */
+.row-2 {
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select {
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+.page-btn {
+    margin: 0 auto 80px;
+}
+
+.page-btn span {
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition: 0.3s ease-in-out;
+}
+
+.page-btn span:hover {
+    background-color: #ff523b;
+    color: #fff;
+}
+
+.single-product {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.single-item .col-2 img {
+    padding: 0;
+}
+
+.single-item .col-2 {
+    padding: 0 20px;
+}
+
+.single-item h4 {
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-item select {
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.logo-red {
+    font-weight: bold;
+    font-size: 25px;
+    color: #f83e24;
+    text-decoration: none;
+}
+
+.logo-white {
+    font-weight: bold;
+    font-size: 25px;
+    color: #fff;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.footer-col-4 a{
+    color: #8a8a8a;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.wrapper {
+    padding: 4% 28%;
+}
+
+.wrapper .input-field {
+    margin-bottom: 10px;
+}
+
+.wrapper .input-field input,
+.wrapper textarea {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 10px;
+}
+
+.wrapper textarea {
+    resize: none;
+    height: 80px;
+}
+
+.wrapper .submitbtn input[type="submit"] {
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background-color 0.5s;
+}
+
+.wrapper .submitbtn input[type="submit"]:hover {
+    background-color: #563434;
+}
+
+.submitbtn {
+    text-align: center;
+    margin: auto;
+}
+
+#error-message {
+    margin-bottom: 20px;
+    background: #fe8b8e;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+
+#search {
+    padding: 10px;
+    border: 1px solid #ff523b;
+    width: 280px;
+    font-size: 14px;
+}
