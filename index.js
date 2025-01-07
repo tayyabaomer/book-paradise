@@ -6,23 +6,23 @@ function signupLoginPage() {
     var registerHere = document.querySelector('#register-page');
     var logInHere = document.querySelector('#logIn-page');
     var dialogSignup = document.querySelector('.register');
-    
-    
+
+
     // When click on the login btn in nav bar login modal will appear
-    logInBtn.addEventListener('click', function() {
+    logInBtn.addEventListener('click', function () {
         dialogLogin.showModal();
     })
-    
-    
+
+
     // Register form when click on register here on login page the register dialog would be appear
-    registerHere.addEventListener('click', function() {
+    registerHere.addEventListener('click', function () {
         dialogSignup.showModal();
         dialogLogin.close();
     })
-    
-    
+
+
     // Login form will appear when click on login here in register page
-    logInHere.addEventListener('click', function() {
+    logInHere.addEventListener('click', function () {
         dialogLogin.showModal();
         dialogSignup.close();
     })
@@ -33,11 +33,11 @@ function signupLoginPage() {
 // submit register form and store data in local storage 
 function registerForm() {
     var form = document.querySelector('.register form');
-    form.addEventListener('submit', function(e) {
-    
+    form.addEventListener('submit', function (e) {
+
         e.preventDefault();
-    
-        
+
+
         // Login form will appear
         var dialogLogin = document.querySelector('.logIn');
         // register form will appear
@@ -46,12 +46,12 @@ function registerForm() {
         var registerName = document.querySelector('#register-name').value;
         var registerEmail = document.querySelector('#register-email').value
         var registerPassword = document.querySelector('#register-password').value
-    
+
         if (registerName === '' || registerEmail === '' || registerPassword === '') {
             alert('please write something');
         }
         else {
-    
+
             if (registerName == localStorage.getItem('userName') || registerEmail == localStorage.getItem('userEmail') || registerPassword == localStorage.getItem('userPassword')) {
                 alert('You are already registered, Please enter your email and password');
                 dialogLogin.showModal();
@@ -60,7 +60,7 @@ function registerForm() {
                 localStorage.setItem('userName', registerName);
                 localStorage.setItem('userEmail', registerEmail);
                 localStorage.setItem('userPassword', registerPassword);
-                
+
                 dialogSignup.close()
                 window.location.href = './index.html'
                 alert('Welcome ' + localStorage.getItem('userName'));
@@ -70,16 +70,16 @@ function registerForm() {
             // console.log(registerEmail)
             // console.log(registerPassword)
         }
-    
+
     })
 }
 
 
 // Login if you have registered already
 function loginForm() {
-    
+
     var form = document.querySelector('.logIn form');
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
         e.preventDefault();
 
 
@@ -112,6 +112,9 @@ function loginForm() {
 
 
 }
+
+
+
 
 
 loginForm();

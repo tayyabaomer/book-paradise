@@ -233,3 +233,17 @@ function sortList() {
 //     }
 // }
 
+
+
+// Daynamic footer
+
+function dynamicYear() {
+    var copyRight = document.querySelector('.copyright');
+
+    var currentYear = new Date().getFullYear();
+    
+    copyRight.innerHTML = `Copyright &copy; ${currentYear} | BookParadise`;
+    
+}
+
+dynamicYear();
